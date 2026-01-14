@@ -1,35 +1,45 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+interface HeaderProps extends TitleProps {
+  noti: number;
 }
 
-export default App
+interface TitleProps {
+  title: string;
+}
+
+const Header = ({ title, noti }: HeaderProps) => {
+  return (
+    <Layout>
+      <h1>
+        {title} - {noti}
+      </h1>
+    </Layout>
+  );
+};
+
+const Footer = ({ title }: TitleProps) => {
+  return (
+    <Layout>
+      <h1>{title}</h1>
+    </Layout>
+  );
+};
+
+const Layout = ({ children }: Readonly<React.PropsWithChildren>) => {
+  return <div className="layout">{children}</div>;
+};
+
+function App() {
+  const count = 0;
+  return (
+    <>
+      <Header title="App Header" noti={43} />
+      <Footer title="App Footer" />
+      <h1>App Counter </h1>
+      <p>Count: {count}</p>
+    </>
+  );
+}
+
+export default App;
