@@ -3,7 +3,7 @@ import Count from "@/component/count";
 function Cart() {
   return (
     <>
-      <p> Cart Screen </p>
+      <p> Cart Screen - {new Date().toTimeString()} </p>
 
       <Count />
     </>

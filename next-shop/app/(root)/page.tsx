@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div>
       <h1 className="bg-red-600 text-xl font-bold">
-        Welcome to the Next.js Shop
+        Welcome to the Next.js Shop - {new Date().toTimeString()}
       </h1>
       {/* <CarouselComponent /> */}
       <Link href="/login">Go to Login</Link>
