@@ -9,6 +9,9 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "acme": "^3.0.3",
+    "acme-carousel": "^2.0.1",
+    "carousel": "^0.0.3",
     "next": "16.1.1",
     "react": "19.2.3",
     "react-dom": "19.2.3"
