@@ -24,8 +24,9 @@ import { notFound, useParams } from "next/navigation";
 function ProductDetail() {
   const { productID } = useParams<{ productID: string }>();
 
-  if (parseInt(productID) > 100) {
-    notFound();
+  if (parseInt(productID) > 110) {
+    // notFound();
+    throw new Error("Product not found");
   }
 
   return <div>ProductDetail: {productID}</div>;
