@@ -4,9 +4,9 @@ function Login() {
   return (
     <div>
       <h1>Login</h1>
-      <h2>
+      <button>
         Don`&lsquo;t have an account? <a href="/auth/register">Register</a>
-      </h2>
+      </button>
     </div>
   );
 }

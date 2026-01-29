@@ -9,8 +9,8 @@ export default function Home() {
         Welcome to the Next.js Shop - {new Date().toTimeString()}
       </h1>
       {/* <CarouselComponent /> */}
-      <Link href="/login">Go to Login</Link>
-      <Link href="/register">Go to Register</Link>
+      <Link href="/login">Already have an account? Login</Link>
+      <Link href="/register">Don&apos;t have an account? Register</Link>
     </div>
   );
 }

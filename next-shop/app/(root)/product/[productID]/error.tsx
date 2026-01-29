@@ -8,10 +8,10 @@ export default function Error({
 }) {
   return (
     <div>
-      <h1>Something went wrong!</h1>
+      <h1>Something went wrong! </h1>
       <p>{error.message}</p>
 
-      <button onClick={() => reset()}>Try Again!</button>
+      <button onClick={() => reset()}>PleaseTry Again!</button>
     </div>
   );
 }

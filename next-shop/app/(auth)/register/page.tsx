@@ -4,9 +4,9 @@ function Register() {
   return (
     <div>
       <h1>Register</h1>
-      <h2>
+      <button>
         Already have an account? <a href="/auth/login">Login</a>
-      </h2>
+      </button>
     </div>
   );
 }

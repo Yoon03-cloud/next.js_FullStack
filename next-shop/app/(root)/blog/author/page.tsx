@@ -1,5 +1,5 @@
 function Author() {
-  return <div>Author</div>;
+  return <div>Author Information</div>;
 }
 
 export default Author;
