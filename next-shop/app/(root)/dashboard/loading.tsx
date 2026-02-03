@@ -1,7 +1,7 @@
 import React from "react";
 
 function DashboardLoading() {
-  return <div>Dashboard Loading ....</div>;
+  return <div>Please wait while the dashboard is loading...</div>;
 }
 
 export default DashboardLoading;
