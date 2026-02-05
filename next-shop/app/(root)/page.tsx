@@ -11,6 +11,7 @@ export default function Home() {
       {/* <CarouselComponent /> */}
       <Link href="/login">Already have an account? Login.</Link>
       <Link href="/register">Don&apos;t have an account? Register.</Link>
+      <Link href="/blog">Go to Blog Page</Link>
     </div>
   );
 }
