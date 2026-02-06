@@ -6,7 +6,12 @@ interface Post {
 }
 
 async function Blog() {
-  const response = await fetch("http://localhost:4000/post");
+  await new Promise((resolve) => setTimeout(resolve, 2000)); // Simulate network delay
+  const response = await fetch("http://localhost:4000/post", {
+    // next: { revalidate: 10 },
+    // tags: ["post"], // on demand revalidation
+    cache: "no-store",
+  });
   if (!response.ok) {
     throw new Error("Failed to fetch posts");
   }
