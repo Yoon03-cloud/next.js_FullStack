@@ -10,7 +10,8 @@ async function Blog() {
   const response = await fetch("http://localhost:4000/post", {
     // next: { revalidate: 10 },
     // tags: ["post"], // on demand revalidation
-    cache: "no-store",
+    // cache: "no-store",
+    cache: "force-cache",
   });
   if (!response.ok) {
     throw new Error("Failed to fetch posts");

@@ -1,6 +1,7 @@
 "use server";
-import { revalidateTag } from "next/cache";
+import { revalidateTag, revalidatePath } from "next/cache";
 
 export async function refreshPostsCache() {
-  revalidateTag("posts", "max");
+  //   revalidateTag("posts", "max");
+  revalidatePath("/blog");
 }
