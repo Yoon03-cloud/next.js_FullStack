@@ -1,12 +1,19 @@
 import UserList from "@/component/userList";
 import prisma from "@/lib/prisma";
+import { Suspense } from "react";
+
+async function GetUsers() {
+  return prisma.user.findMany();
+}
 
 async function Author() {
-  const authors = await prisma.user.findMany();
+  const authors = GetUsers();
   return (
     <>
       <h1>Author Information</h1>
-      <UserList authors={authors} />
+      <Suspense fallback={<div>Loading...</div>}>
+        <UserList authors={authors} />
+      </Suspense>
     </>
   );
 }
