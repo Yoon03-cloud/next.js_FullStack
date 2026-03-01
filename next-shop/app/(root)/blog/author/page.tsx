@@ -11,7 +11,7 @@ async function Author() {
   return (
     <>
       <h1>Author Information</h1>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div>Please wait, loading...</div>}>
         <UserList authors={authors} />
       </Suspense>
     </>

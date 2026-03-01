@@ -1,0 +1,11 @@
+Data Fetching 
+1. Server Component
+2. Client Component
+
+1. Data fetching in Server Component
+a. Fetching API (use next js as frontend)
+b.Prisma ORM (next js full-stack )
+
+2. Data Fetching in Client Component
+a. React "use" Hook
+b.Tanstack Query or RTK query or SWR
