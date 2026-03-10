@@ -1,4 +1,5 @@
 import prisma from "@/lib/prisma";
+import Link from "next/link";
 
 export default async function Home() {
   const users = await prisma.user.findMany();
@@ -7,6 +8,12 @@ export default async function Home() {
       <h1 className="mb-8 font-[family-name:var(--font-geist-sans)] text-4xl font-bold text-[#333333]">
         Welcome!
       </h1>
+
+      <Link href="/posts">View Posts</Link>
+      <Link href="/login">Go to Login</Link>
+      <Link href="/register">Go to Register</Link>
+      <Link href="/product">Go to Product</Link>
+      <Link href="/Dashboard">Go to Dashboard</Link>
       <ol className="list-inside list-decimal font-[family-name:var(--font-geist-sans)]">
         {users.map((user) => (
           <li key={user.id} className="mb-2">
