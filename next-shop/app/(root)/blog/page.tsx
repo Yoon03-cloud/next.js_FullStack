@@ -7,7 +7,7 @@ interface Post {
 
 async function Blog() {
   await new Promise((resolve) => setTimeout(resolve, 2000)); // Simulate network delay
-  const response = await fetch("http://localhost:4000/post", {
+  const response = await fetch("http://localhost:4000/posts", {
     // next: { revalidate: 10 },
     // tags: ["post"], // on demand revalidation
     // cache: "no-store",

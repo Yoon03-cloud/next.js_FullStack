@@ -14,6 +14,7 @@ export default async function Home() {
       <Link href="/register">Go to Register</Link>
       <Link href="/product">Go to Product</Link>
       <Link href="/Dashboard">Go to Dashboard</Link>
+      <Link href="/blog">Go to Blog Page</Link>
       <ol className="list-inside list-decimal font-[family-name:var(--font-geist-sans)]">
         {users.map((user) => (
           <li key={user.id} className="mb-2">
