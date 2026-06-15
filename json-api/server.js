@@ -4,8 +4,7 @@ const router = jsonServer.router("db.json");
 const middlewares = jsonServer.defaults();
 
 server.use((req, res, next) => {
-  // Add custom middleware logic here
-  const delay = 2000;
+  const delay = 2000; // Delay in milliseconds (2 seconds)
   setTimeout(() => {
     next();
   }, delay);

@@ -20,7 +20,7 @@ async function PostPage() {
 
   return (
     <>
-      <h1>PostPage</h1>
+      <h1>Post Page</h1>
 
       <ul>
         {posts.map((post) => (
